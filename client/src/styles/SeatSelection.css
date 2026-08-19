@@ -1,0 +1,615 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.seat-selection-page {
+    min-height: 100vh;
+    background: #f5f7fa;
+    padding: 35px 20px 60px;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+
+/* =========================================
+   JOURNEY INFORMATION
+========================================= */
+
+.seat-journey-info {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 25px;
+
+    background: #ffffff;
+
+    padding: 25px 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    text-align: center;
+}
+
+
+.seat-journey-info h1 {
+    margin: 0 0 10px;
+
+    font-family: "League Spartan", sans-serif;
+
+    font-size: 32px;
+
+    color: #10233f;
+}
+
+
+.seat-journey-info h2 {
+    margin: 5px 0;
+
+    font-size: 22px;
+
+    color: #10233f;
+}
+
+
+.seat-journey-info p {
+    margin: 6px 0;
+
+    color: #687386;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   BUS CONTAINER
+========================================= */
+
+.bus-container {
+    width: 90%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   BUS FRONT
+========================================= */
+
+.bus-front {
+    height: 65px;
+
+    border-bottom: 2px dashed #d8dce2;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.driver-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    background: #f1f3f5;
+
+    border-radius: 10px;
+
+    color: #10233f;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.steering {
+    font-size: 20px;
+}
+
+
+/* =========================================
+   SEAT GRID
+========================================= */
+
+.seat-grid {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   EACH BUS ROW
+========================================= */
+
+.seat-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        55px
+        1fr
+        1fr;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   AISLE
+========================================= */
+
+.aisle {
+    width: 100%;
+    height: 10px;
+}
+
+
+/* =========================================
+   SEAT
+========================================= */
+
+.seat {
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-family: "League Spartan", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+    user-select: none;
+}
+
+
+.seat input {
+    display: none;
+}
+
+
+/* =========================================
+   AVAILABLE
+========================================= */
+
+.seat.available {
+    background: #e9edf1;
+
+    color: #10233f;
+
+    border: 1px solid #e0e4e8;
+}
+
+
+.seat.available:hover {
+    transform: translateY(-2px);
+
+    background: #dce2e8;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   SELECTED
+========================================= */
+
+.seat.selected {
+    background: #00c4a3;
+
+    color: #ffffff;
+
+    border: 1px solid #00b394;
+
+    box-shadow:
+        0 5px 15px rgba(0, 196, 163, 0.25);
+}
+
+
+/* =========================================
+   BOOKED
+========================================= */
+
+.seat.occupied {
+    background: #dc3545;
+
+    color: #ffffff;
+
+    cursor: not-allowed;
+
+    border: 1px solid #c82333;
+}
+
+
+/* =========================================
+   LEGEND
+========================================= */
+
+.legend {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 28px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e5e7eb;
+
+    font-size: 14px;
+
+    color: #687386;
+}
+
+
+.legend > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.sample {
+    width: 15px;
+    height: 15px;
+
+    display: inline-block;
+
+    border-radius: 4px;
+}
+
+
+.sample.available {
+    background: #e9edf1;
+}
+
+
+.sample.selected {
+    background: #00c4a3;
+}
+
+
+.sample.occupied {
+    background: #dc3545;
+}
+
+
+/* =========================================
+   BOTTOM SUMMARY
+========================================= */
+
+.seat-container {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 25px auto 0;
+
+    background: #ffffff;
+
+    padding: 18px 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+.seat-summary {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+.summary-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.summary-item span {
+    font-size: 13px;
+
+    color: #687386;
+}
+
+
+.summary-item strong {
+    font-size: 17px;
+
+    color: #10233f;
+}
+
+
+/* =========================================
+   CONTINUE BUTTON
+========================================= */
+
+.seat-continue {
+    min-width: 150px;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #e5232e;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.seat-continue:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(229, 35, 46, 0.25);
+}
+
+
+.seat-continue:disabled {
+    background: #cbd0d6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   LOADING / ERROR
+========================================= */
+
+.seat-page-message {
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-family: "Jost", sans-serif;
+}
+
+
+.seat-page-message h2 {
+    color: #10233f;
+}
+
+
+.seat-page-message p {
+    color: #687386;
+}
+
+
+.seat-page-message button {
+    margin-top: 15px;
+
+    padding: 11px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e5232e;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    .seat-selection-page {
+        padding: 20px 10px 40px;
+    }
+
+
+    .seat-journey-info {
+        width: 95%;
+
+        padding: 20px;
+    }
+
+
+    .seat-journey-info h1 {
+        font-size: 27px;
+    }
+
+
+    .bus-container {
+        width: 95%;
+
+        padding: 18px;
+    }
+
+
+    .seat-row {
+        grid-template-columns:
+            1fr
+            1fr
+            30px
+            1fr
+            1fr;
+
+        gap: 7px;
+    }
+
+
+    .seat {
+        height: 45px;
+
+        font-size: 14px;
+    }
+
+
+    .seat-summary {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .legend {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .seat-journey-info h1 {
+        font-size: 24px;
+    }
+
+
+    .seat-journey-info h2 {
+        font-size: 19px;
+    }
+
+
+    .seat-journey-info p {
+        font-size: 13px;
+    }
+
+
+    .bus-container {
+        padding: 12px;
+
+        border-radius: 18px;
+    }
+
+
+    .seat-row {
+        grid-template-columns:
+            1fr
+            1fr
+            20px
+            1fr
+            1fr;
+
+        gap: 5px;
+    }
+
+
+    .seat {
+        height: 40px;
+
+        border-radius: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .legend {
+        font-size: 12px;
+    }
+
+
+    .seat-summary {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+    }
+
+
+    .seat-continue {
+        width: 100%;
+    }
+
+}

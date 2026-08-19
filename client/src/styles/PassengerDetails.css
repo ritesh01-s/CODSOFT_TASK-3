@@ -1,0 +1,494 @@
+/* =========================================
+   SAFAR - PASSENGER DETAILS
+========================================= */
+
+.passenger-page {
+    min-height: 100vh;
+
+    padding: 45px 20px 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.passenger-header {
+    max-width: 850px;
+
+    margin: 0 auto 25px;
+
+    text-align: center;
+}
+
+.passenger-header h1 {
+    margin: 0 0 8px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.passenger-header p {
+    margin: 0;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 15px;
+
+    color: #737b88;
+}
+
+
+/* =========================================
+   SELECTED SEAT SUMMARY
+========================================= */
+
+.selected-seat-summary {
+    max-width: 850px;
+
+    margin: 0 auto 25px;
+
+    padding: 18px 22px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #d8242c;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.summary-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #198754;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.selected-seat-summary div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.selected-seat-summary span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+.selected-seat-summary strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 16px;
+
+    color: #172033;
+}
+
+
+/* =========================================
+   PASSENGER FORM
+========================================= */
+
+.passenger-form {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   PASSENGER CARD
+========================================= */
+
+.passenger-card {
+    margin-bottom: 22px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.passenger-card-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.passenger-card-header h2 {
+    margin: 0 0 4px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 21px;
+
+    color: #172033;
+}
+
+.passenger-card-header p {
+    margin: 0;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    color: #8a8f98;
+}
+
+.seat-badge {
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    background: #f8e7e8;
+
+    color: #d8242c;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   FORM FIELDS
+========================================= */
+
+.passenger-fields {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #333b48;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid #dfe2e6;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #fafafa;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    color: #172033;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #d8242c;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(216, 36, 44, 0.08);
+}
+
+.form-group input::placeholder {
+    color: #a4a8ae;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.passenger-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.back-button {
+    padding: 12px 25px;
+
+    border: 1px solid #d5d8dc;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #4d5561;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.back-button:hover {
+    background: #f5f5f5;
+
+    transform: translateY(-1px);
+}
+
+
+.continue-button {
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d8242c;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(216, 36, 44, 0.25);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.continue-button:hover {
+    background: #bd1e25;
+
+    transform: translateY(-2px);
+}
+
+.continue-button span {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   NO SEATS MESSAGE
+========================================= */
+
+.passenger-message {
+    min-height: 70vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.message-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.message-card h2 {
+    margin-top: 0;
+
+    font-family: "Jost", sans-serif;
+
+    color: #172033;
+}
+
+.message-card p {
+    font-family: "Jost", sans-serif;
+
+    color: #777;
+
+    line-height: 1.6;
+}
+
+.message-card button {
+    margin-top: 15px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d8242c;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .passenger-page {
+        padding: 30px 15px 50px;
+    }
+
+    .passenger-header h1 {
+        font-size: 28px;
+    }
+
+    .passenger-card {
+        padding: 20px;
+    }
+
+    .passenger-card-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .passenger-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .passenger-actions {
+        flex-direction: column-reverse;
+    }
+
+    .back-button,
+    .continue-button {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+}

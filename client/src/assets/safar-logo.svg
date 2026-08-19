@@ -1,0 +1,118 @@
+<!-- SAFAR Icon -->
+        <svg viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Outer Circle -->
+            <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="#172033"/>
+
+            <!-- Road -->
+            <path
+                d="M31 91 L43 55 L47 45 L50 35 L53 45 L57 55 L69 91"
+                fill="#263653"/>
+
+            <!-- Road Center Lines -->
+            <path
+                d="M48 84 L50 72"
+                stroke="#ffffff"
+                stroke-width="4"
+                stroke-linecap="round"/>
+
+            <path
+                d="M49 64 L50 55"
+                stroke="#ffffff"
+                stroke-width="4"
+                stroke-linecap="round"/>
+
+            <path
+                d="M50 47 L50 40"
+                stroke="#ffffff"
+                stroke-width="4"
+                stroke-linecap="round"/>
+
+            <!-- Bus -->
+            <g transform="translate(28,25)">
+
+                <!-- Bus Body -->
+                <rect
+                    x="4"
+                    y="8"
+                    width="36"
+                    height="24"
+                    rx="5"
+                    fill="#22c55e"/>
+
+                <!-- Front Window -->
+                <rect
+                    x="25"
+                    y="12"
+                    width="11"
+                    height="9"
+                    rx="2"
+                    fill="#172033"/>
+
+                <!-- Side Windows -->
+                <rect
+                    x="8"
+                    y="12"
+                    width="7"
+                    height="9"
+                    rx="2"
+                    fill="#172033"/>
+
+                <rect
+                    x="17"
+                    y="12"
+                    width="7"
+                    height="9"
+                    rx="2"
+                    fill="#172033"/>
+
+                <!-- Lower Body -->
+                <rect
+                    x="4"
+                    y="22"
+                    width="36"
+                    height="10"
+                    rx="2"
+                    fill="#16a34a"/>
+
+                <!-- Headlight -->
+                <circle
+                    cx="37"
+                    cy="25"
+                    r="2"
+                    fill="#ffffff"/>
+
+                <!-- Wheels -->
+                <circle
+                    cx="12"
+                    cy="33"
+                    r="5"
+                    fill="#172033"/>
+
+                <circle
+                    cx="33"
+                    cy="33"
+                    r="5"
+                    fill="#172033"/>
+
+                <!-- Wheel Hubs -->
+                <circle
+                    cx="12"
+                    cy="33"
+                    r="2"
+                    fill="#ffffff"/>
+
+                <circle
+                    cx="33"
+                    cy="33"
+                    r="2"
+                    fill="#ffffff"/>
+
+            </g>
+
+        </svg>

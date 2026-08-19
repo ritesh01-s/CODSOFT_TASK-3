@@ -1,0 +1,554 @@
+/* =========================================
+   MY BOOKINGS PAGE
+========================================= */
+
+.my-bookings-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 7% 80px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.bookings-header {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.bookings-header h1 {
+    margin: 0 0 8px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+}
+
+.bookings-header p {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    color: #777;
+}
+
+
+/* =========================================
+   BOOKINGS LIST
+========================================= */
+
+.bookings-list {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   BOOKING CARD
+========================================= */
+
+.booking-card {
+    background: #ffffff;
+    border-radius: 22px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eeeeee;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   BOOKING HEADER
+========================================= */
+
+.booking-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.booking-label {
+    display: block;
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.booking-card-header h2 {
+    margin: 0;
+    font-family: "League Spartan", sans-serif;
+    font-size: 23px;
+    color: #222;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.booking-status {
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-family: "Jost", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.booking-status.confirmed {
+    background: #e7f8ed;
+    color: #18864b;
+}
+
+.booking-status.cancelled {
+    background: #fdeaea;
+    color: #d8242c;
+}
+
+.booking-status.completed {
+    background: #eaf1ff;
+    color: #3568c8;
+}
+
+
+/* =========================================
+   BUS DETAILS
+========================================= */
+
+.bus-details {
+    padding: 28px 30px;
+}
+
+.bus-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bus-title h2 {
+    margin: 0 0 4px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    color: #222;
+}
+
+.bus-title span {
+    font-family: "Jost", sans-serif;
+    color: #777;
+    font-size: 14px;
+}
+
+.bus-type {
+    padding: 7px 13px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    color: #444 !important;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ROUTE
+========================================= */
+
+.route-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.route-location {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.route-location strong {
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    color: #222;
+}
+
+.route-location span:not(.route-label) {
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+    color: #555;
+}
+
+.route-label {
+    font-family: "Jost", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+.destination {
+    text-align: right;
+    align-items: flex-end;
+}
+
+
+/* =========================================
+   ROUTE LINE
+========================================= */
+
+.route-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.route-line div {
+    flex: 1;
+    height: 1px;
+    border-top: 2px dashed #d8242c;
+}
+
+.route-line span {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   JOURNEY INFO
+========================================= */
+
+.journey-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.journey-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.journey-info span {
+    font-family: "Jost", sans-serif;
+    font-size: 13px;
+    color: #888;
+}
+
+.journey-info strong {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* =========================================
+   BOOKING SUMMARY
+========================================= */
+
+.booking-summary {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 20px;
+    padding: 22px 30px;
+    background: #fafafa;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.booking-summary div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.booking-summary span {
+    font-family: "Jost", sans-serif;
+    font-size: 13px;
+    color: #888;
+}
+
+.booking-summary strong {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.total-amount {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.total-amount strong {
+    font-size: 22px;
+    color: #d8242c;
+}
+
+
+/* =========================================
+   PASSENGER SECTION
+========================================= */
+
+.passenger-section {
+    padding: 25px 30px;
+}
+
+.passenger-section h3 {
+    margin: 0 0 18px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+
+.passenger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.passenger-row {
+    display: grid;
+    grid-template-columns: 40px 1.8fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 16px;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.passenger-number {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #d8242c;
+    color: #ffffff;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+}
+
+.passenger-row div:not(.passenger-number) {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.passenger-row span {
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    color: #999;
+}
+
+.passenger-row strong {
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.booking-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 20px 30px 25px;
+}
+
+.view-ticket-btn,
+.cancel-booking-btn,
+.search-buses-btn {
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.view-ticket-btn {
+    background: #d8242c;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(216, 36, 44, 0.25);
+}
+
+.view-ticket-btn:hover {
+    background: #bd1e25;
+    transform: translateY(-1px);
+}
+
+.cancel-booking-btn {
+    background: #ffffff;
+    color: #d8242c;
+    border: 1px solid #d8242c;
+}
+
+.cancel-booking-btn:hover {
+    background: #fdeaea;
+}
+
+
+/* =========================================
+   NO BOOKINGS
+========================================= */
+
+.no-bookings {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 55px 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.no-bookings-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.no-bookings h2 {
+    margin: 0 0 8px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+}
+
+.no-bookings p {
+    margin-bottom: 25px;
+    font-family: "Jost", sans-serif;
+    color: #777;
+}
+
+.search-buses-btn {
+    background: #d8242c;
+    color: #ffffff;
+}
+
+.search-buses-btn:hover {
+    background: #bd1e25;
+}
+
+
+/* =========================================
+   LOADING / ERROR
+========================================= */
+
+.bookings-loading,
+.bookings-error {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.bookings-loading h2,
+.bookings-error h2 {
+    font-family: "League Spartan", sans-serif;
+}
+
+.bookings-error p {
+    font-family: "Jost", sans-serif;
+    color: #d8242c;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .my-bookings-page {
+        padding: 100px 20px 50px;
+    }
+
+    .bookings-header h1 {
+        font-size: 34px;
+    }
+
+    .booking-card-header {
+        padding: 20px;
+    }
+
+    .bus-details {
+        padding: 22px 20px;
+    }
+
+    .route-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .destination {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .route-line {
+        display: none;
+    }
+
+    .journey-info {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-summary {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .total-amount {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .passenger-section {
+        padding: 20px;
+    }
+
+    .passenger-row {
+        grid-template-columns: 35px 1fr;
+    }
+
+    .passenger-row div:nth-child(3),
+    .passenger-row div:nth-child(4) {
+        grid-column: 2;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .view-ticket-btn,
+    .cancel-booking-btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,991 @@
+/* =========================================
+   SAFAR - BOOKING CONFIRMATION
+========================================= */
+
+.confirmation-page {
+    min-height: 100vh;
+    padding: 45px 20px 70px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.confirmation-header {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.confirmation-header h1 {
+    margin: 0 0 8px;
+
+    font-family: "Jost", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.confirmation-header p {
+    margin: 0;
+
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+
+    color: #737b88;
+}
+
+
+/* =========================================
+   JOURNEY SUMMARY
+========================================= */
+
+.journey-summary-card {
+    max-width: 900px;
+
+    margin: 0 auto 25px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+}
+
+.journey-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-label {
+    font-family: "Jost", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #d8242c;
+}
+
+.journey-main h2 {
+    margin: 5px 0 3px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 23px;
+
+    color: #172033;
+}
+
+.journey-main p {
+    margin: 0;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* =========================================
+   ROUTE
+========================================= */
+
+.route-details {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.route-point {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.route-point:last-child {
+    text-align: right;
+}
+
+.route-point strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 20px;
+
+    color: #172033;
+}
+
+.route-point span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+.route-line {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.route-line span {
+    flex: 1;
+
+    height: 1px;
+
+    background: #d8242c;
+}
+
+.route-line small {
+    font-family: "Jost", sans-serif;
+
+    font-size: 11px;
+
+    color: #888;
+
+    white-space: nowrap;
+}
+
+.journey-date {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.journey-date span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+.journey-date strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 15px;
+
+    color: #172033;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.confirmation-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.confirmation-card,
+.payment-card {
+    margin-bottom: 22px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.card-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 20px;
+}
+
+.heading-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #f8e7e8;
+
+    color: #d8242c;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+.card-heading h2 {
+    margin: 0 0 3px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 20px;
+
+    color: #172033;
+}
+
+.card-heading p {
+    margin: 0;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 12px;
+
+    color: #8a8f98;
+}
+
+
+/* =========================================
+   SELECTED SEATS
+========================================= */
+
+.selected-seat-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.confirmation-seat {
+    min-width: 55px;
+
+    padding: 9px 14px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    background: #198754;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PASSENGER REVIEW
+========================================= */
+
+.passenger-review-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.passenger-review {
+    display: grid;
+
+    grid-template-columns:
+        40px
+        1fr
+        80px
+        100px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px;
+
+    background: #fafafa;
+
+    border-radius: 12px;
+}
+
+.review-number {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #172033;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.review-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.review-details strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    color: #172033;
+}
+
+.review-details span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 12px;
+
+    color: #d8242c;
+}
+
+.review-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.review-info span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 11px;
+
+    color: #888;
+}
+
+.review-info strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    color: #333;
+}
+
+
+/* =========================================
+   PAYMENT SUMMARY
+========================================= */
+
+.payment-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.payment-details > div {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.payment-details span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+.payment-details strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    color: #172033;
+}
+
+.payment-total {
+    margin-top: 8px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.payment-total span {
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.payment-total strong {
+    font-size: 23px;
+
+    color: #d8242c;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.booking-error {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-bottom: 20px;
+
+    padding: 15px 18px;
+
+    border-left: 4px solid #dc3545;
+
+    border-radius: 8px;
+
+    background: #fff1f2;
+}
+
+.booking-error strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    color: #b4232c;
+}
+
+.booking-error span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    color: #555;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.confirmation-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.confirmation-back {
+    padding: 12px 25px;
+
+    border: 1px solid #d5d8dc;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #4d5561;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.confirmation-back:hover:not(:disabled) {
+    background: #f5f5f5;
+}
+
+.confirm-booking-button {
+    padding: 13px 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d8242c;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(216, 36, 44, 0.25);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.confirm-booking-button:hover:not(:disabled) {
+    background: #bd1e25;
+
+    transform: translateY(-2px);
+}
+
+.confirm-booking-button:disabled {
+    background: #aaa;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   SUCCESS PAGE
+========================================= */
+
+.booking-success-page {
+    min-height: 75vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.success-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 45px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #198754;
+
+    color: #ffffff;
+
+    font-size: 36px;
+
+    font-weight: 700;
+}
+
+.success-card h1 {
+    margin: 0 0 10px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 30px;
+
+    color: #172033;
+}
+
+.success-message {
+    margin: 0 0 25px;
+
+    font-family: "Jost", sans-serif;
+
+    color: #777;
+}
+
+.booking-reference {
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    background: #f8e7e8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.booking-reference span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+.booking-reference strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 22px;
+
+    letter-spacing: 1.5px;
+
+    color: #d8242c;
+}
+
+.success-summary {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.success-summary > div {
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #fafafa;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.success-summary span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 11px;
+
+    color: #888;
+}
+
+.success-summary strong {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    color: #172033;
+}
+
+.success-summary .confirmed-status {
+    color: #198754;
+
+    text-transform: capitalize;
+}
+
+.success-actions {
+    display: flex;
+
+    gap: 12px;
+
+    justify-content: center;
+}
+
+.primary-action,
+.secondary-action {
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.primary-action {
+    border: none;
+
+    background: #d8242c;
+
+    color: #ffffff;
+}
+
+.primary-action:hover {
+    background: #bd1e25;
+}
+
+.secondary-action {
+    border: 1px solid #d5d8dc;
+
+    background: #ffffff;
+
+    color: #4d5561;
+}
+
+
+/* =========================================
+   MISSING DATA
+========================================= */
+
+.confirmation-message {
+    min-height: 70vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.confirmation-message-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.warning-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #fff1f2;
+
+    color: #d8242c;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+.confirmation-message-card h2 {
+    font-family: "Jost", sans-serif;
+
+    color: #172033;
+}
+
+.confirmation-message-card p {
+    font-family: "Jost", sans-serif;
+
+    line-height: 1.6;
+
+    color: #777;
+}
+
+.confirmation-message-card button {
+    margin-top: 15px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d8242c;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .confirmation-page {
+        padding: 30px 15px 50px;
+    }
+
+    .confirmation-header h1 {
+        font-size: 28px;
+    }
+
+    .journey-summary-card,
+    .confirmation-card,
+    .payment-card {
+        padding: 20px;
+    }
+
+    .route-details {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .route-point:last-child {
+        text-align: center;
+    }
+
+    .route-line {
+        width: 70%;
+
+        margin: 0 auto;
+    }
+
+    .journey-date {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+    .passenger-review {
+        grid-template-columns:
+            40px
+            1fr;
+    }
+
+    .review-info {
+        padding-left: 55px;
+    }
+
+    .confirmation-actions {
+        flex-direction: column-reverse;
+    }
+
+    .confirmation-back,
+    .confirm-booking-button {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .success-card {
+        padding: 30px 20px;
+    }
+
+    .success-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .success-actions {
+        flex-direction: column;
+    }
+
+    .primary-action,
+    .secondary-action {
+        width: 100%;
+    }
+
+}

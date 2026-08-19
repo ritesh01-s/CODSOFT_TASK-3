@@ -1,0 +1,1155 @@
+/* =====================================================
+   SAFAR - GLOBAL STYLES
+===================================================== */
+html,
+body,
+#root {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "League Spartan", sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8ebef;
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* ================= BRAND ================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.brand-name {
+    font-family: "League Spartan", sans-serif;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    line-height: 1;
+
+    color: #172033;
+}
+
+
+.tagline {
+    margin-top: 5px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 1.1px;
+
+    color: #687386;
+
+    white-space: nowrap;
+}
+
+
+/* ================= NAV LINKS ================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+.nav-links a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #374151;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.25s ease;
+}
+
+
+.nav-links a:hover {
+    color: #d8242c;
+}
+
+
+/* Active Link */
+
+.nav-links a.active {
+    color: #d8242c;
+}
+
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 2px;
+
+    background: #d8242c;
+
+    border-radius: 10px;
+}
+
+
+/* ================= LOGIN ================= */
+
+.nav-login {
+    padding: 10px 20px;
+
+    border: 1px solid #d8242c;
+
+    border-radius: 8px;
+
+    color: #d8242c !important;
+}
+
+
+.nav-login:hover {
+    background: #d8242c;
+
+    color: #ffffff !important;
+}
+
+
+/* ================= SIGNUP ================= */
+
+.nav-signup {
+    padding: 11px 21px;
+
+    border-radius: 8px;
+
+    background: #d8242c;
+
+    color: #ffffff !important;
+}
+
+
+.nav-signup:hover {
+    background: #b91c23;
+}
+
+/* ================= LOGOUT ================= */
+
+.nav-logout {
+    padding: 10px 20px;
+
+    border: 1px solid #d8242c;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #d8242c;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.nav-logout:hover {
+    background: #d8242c;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 570px;
+
+    overflow: visible;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* ================= OVERLAY ================= */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 20, 35, 0.82),
+            rgba(12, 20, 35, 0.35),
+            rgba(12, 20, 35, 0.12)
+        );
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1100px, 90%);
+
+    padding-right: 380px;
+
+    color: #ffffff;
+
+    transform: translateY(-35px);
+}
+
+
+.hero-small-title {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #fca5a5;
+}
+
+
+.hero-content h1 {
+    max-width: 650px;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    font-weight: 700;
+
+    line-height: 0.98;
+
+    letter-spacing: -1px;
+
+    text-align: left;
+}
+
+
+.hero-content h1 span {
+    display: block;
+
+    color: #ffffff;
+}
+
+
+.hero-content p {
+    max-width: 520px;
+
+    margin-top: 22px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   SEARCH CARD
+===================================================== */
+
+.search-card {
+    position:absolute;
+
+    z-index: 10;
+
+    bottom: -55px;
+
+    left: 50%;      
+
+    transform: translateX(-50%);
+
+    width: min(1080px, 92%);
+
+    min-height: 110px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 18px 20px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* =====================================================
+   SEARCH INPUT
+===================================================== */
+
+.input-group {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 8px 18px;
+
+    border-right: 1px solid #e5e7eb;
+}
+
+
+.input-group label {
+    margin-bottom: 7px;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: #8a94a6;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #172033;
+}
+
+
+.input-group input::placeholder {
+    color: #9ca3af;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   SWAP BUTTON
+===================================================== */
+
+.swap-btn {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.swap-btn:hover {
+    background: #172033;
+
+    color: #ffffff;
+
+    transform: rotate(180deg);
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.date-group {
+    border-right: none;
+}
+
+
+.date-input-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.calendar-icon {
+    font-size: 15px;
+}
+
+
+.date-input-wrapper input {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
+
+.search-btn {
+    flex-shrink: 0;
+
+    height: 55px;
+
+    padding: 0 27px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #d8242c;
+
+    color: #ffffff;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    box-shadow:
+        0 8px 20px rgba(216, 36, 44, 0.25);
+
+    transition: 0.25s ease;
+}
+
+
+.search-btn span {
+    font-size: 22px;
+
+    line-height: 1;
+}
+
+
+.search-btn:hover {
+    background: #b91c23;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(216, 36, 44, 0.30);
+}
+
+/* =====================================================
+   WHY SAFAR
+===================================================== */
+
+.why-safar {
+    padding: 125px 7% 80px;
+
+    background: #f8fafc;
+
+    text-align: center;
+}
+
+
+.section-heading > span {
+    font-family: "Jost", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #d8242c;
+}
+
+
+.section-heading h2 {
+    margin-top: 8px;
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+.section-heading p {
+    max-width: 550px;
+
+    margin: 12px auto 0;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #687386;
+}
+
+
+/* =====================================================
+   FEATURE CARDS
+===================================================== */
+
+.feature-container {
+   width: 90%;
+    max-width: 1400px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+.feature-card {
+    width: 100%;
+    min-height: 160px;
+
+    padding: 28px 25px;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+
+
+}
+
+
+.feature-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+
+    background: #fff1f2;
+
+    font-size: 24px;
+}
+
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    margin: 5px 0 8px;
+
+    font-size: 21px;
+    font-weight: 600;
+
+    color: #10233f;
+}
+
+
+.feature-card p {
+    font-family: "Jost", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #687386;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #172033;
+
+    color: #aeb7c6;
+
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding-right: 300px;
+    }
+
+    .search-card {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .hero {
+        min-height: 650px;
+    }
+
+
+    .hero-content {
+        width: 90%;
+
+        padding-right: 0;
+
+        text-align: center;
+
+        transform: translateY(-100px);
+    }
+
+
+    .hero-content h1 {
+        text-align: center;
+
+        font-size: 45px;
+    }
+
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+
+    .search-card {
+        bottom: -210px;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .input-group {
+        width: 100%;
+
+        padding: 12px 10px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+
+    .swap-btn {
+        margin: -15px 0;
+    }
+
+
+    .date-group {
+        border-bottom: none;
+    }
+
+
+    .search-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .why-safar {
+        padding-top: 250px;
+    }
+
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .brand-name {
+        font-size: 24px;
+    }
+
+
+    .tagline {
+        font-size: 8px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+}
+/* =========================================================
+   SAFAR - BUS SEARCH RESULT CARD
+   ========================================================= */
+
+.bus-card {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 28px 32px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.25s ease;
+
+    text-align: left;
+}
+
+.bus-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   BUS INFORMATION
+   ========================================================= */
+
+.bus-info {
+    position: relative;
+    width: 100%;
+    min-height: 175px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BUS NAME
+   ========================================================= */
+
+.bus-info h3 {
+    margin: 0 0 8px 0;
+
+    color: #172033;
+
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BUS TYPE
+   ========================================================= */
+
+.bus-info span {
+    display: inline-block;
+
+    padding: 6px 13px;
+    margin-bottom: 22px;
+
+    background: #f1f3f5;
+    border-radius: 20px;
+
+    color: #555;
+    font-family: "Jost", sans-serif;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   JOURNEY TIME
+   ========================================================= */
+
+.bus-info time {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #252b36;
+
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AVAILABLE SEATS
+   ========================================================= */
+
+.bus-info p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    text-align: left;
+    line-height: normal;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.bus-info h5 {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    margin: 0;
+    padding: 0;
+
+    color: #172033;
+
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    text-align: right;
+    line-height: normal;
+}
+
+
+/* =========================================================
+   SELECT SEATS BUTTON
+   ========================================================= */
+
+.bus-info .select-seat-btn {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    margin: 0;
+
+    padding: 11px 22px;
+
+    background-color: #d8242c;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    box-shadow: 0 4px 15px rgba(216, 36, 44, 0.25);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.bus-info .select-seat-btn:hover {
+    background-color: #bd1e25;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(216, 36, 44, 0.30);
+}
+
+
+.bus-info .select-seat-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .bus-card {
+        width: calc(100% - 24px);
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .bus-info {
+        min-height: 220px;
+    }
+
+    .bus-info h3 {
+        font-size: 21px;
+    }
+
+    .bus-info time {
+        font-size: 15px;
+    }
+
+    .bus-info h5 {
+        position: static;
+        margin-top: 15px;
+
+        text-align: left;
+    }
+
+    .bus-info .select-seat-btn {
+        left: 0;
+        right: auto;
+        bottom: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .bus-card {
+        width: calc(100% - 20px);
+        padding: 18px;
+    }
+
+    .bus-info time {
+        font-size: 13px;
+    }
+
+    .bus-info .select-seat-btn {
+        width: 100%;
+    }
+}
